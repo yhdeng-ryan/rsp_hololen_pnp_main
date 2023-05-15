@@ -1,0 +1,22 @@
+repositories:
+  ROS2_pick_and_place_UR5:
+    type: git
+    url: https://github.com/JuoTungChen/ROS2_pick_and_place_UR5.git
+    version: master
+  hololens2-ur5-pick-and-place:
+    type: git
+    url: https://github.com/PrimoKu/hololens2-ur5-pick-and-place.git
+    version: main
+  robotiq_2f:
+    type: git
+    url: https://github.com/yhdeng-ryan/robotiq_2f.git
+    version: master
+  ros2-hololens2-communication:
+    type: git
+    url: https://github.com/PrimoKu/ros2-hololens2-communication.git
+    version: main
+  ros2_fiducial_registration_server:
+    type: git
+    url: https://github.com/vishnukolal/ros2_fiducial_registration_server.git
+    version: main
+    
