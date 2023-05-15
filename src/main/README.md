@@ -1,4 +1,4 @@
-# Main Packages
+# Main Package
 
 ## main_node 
 - Provides a main entry for executing the project.
