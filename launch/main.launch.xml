@@ -1,0 +1,11 @@
+<launch>
+
+       <include file="$(find-pkg-share pnp_actionlib)/launch/ur5_pnp_actionlib.launch" />
+
+       <include file="$(find-pkg-share ros2_unity_communication)/launch/ros_unity_communication.xml" />
+
+       <node pkg="registration_service" exec="reg_svr" />
+
+       <node pkg="main" exec="main_node" launch-prefix="xterm -e" output="screen" />
+
+</launch>
