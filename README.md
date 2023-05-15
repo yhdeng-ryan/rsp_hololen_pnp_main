@@ -1,4 +1,4 @@
-# RPS Project
+# RSP Project
 
 ## Installation
 Download all the packages for this project.
