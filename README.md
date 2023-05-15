@@ -1,4 +1,4 @@
-# RSP Project
+# Robot System Programming Project
 
 ## Installation
 Download all the packages for this project.
@@ -24,5 +24,5 @@ rosdep install --from-paths src -y --ignore-src --skip-keys="Eigen3"
 colcon build
 ```
 
-## Useage
+## Usage
 
