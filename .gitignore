@@ -1,32 +1,14 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+build/
+install/
+log/
+.vscode/
+robotiq_2f/
+ros2/
+ros2_rust/
+.cargo/
+Universal_Robots_ROS2_Driver/
+hololens2-ur5-pick-and-place/
+robotiq_2f/
+ros2_fiducial_registration_server/
+ros2-hololens2-communication/
+ROS2_pick_and_place_UR5/
