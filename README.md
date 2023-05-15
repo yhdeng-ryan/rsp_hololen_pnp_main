@@ -16,7 +16,13 @@ pip install git+https://github.com/colcon/colcon-cargo.git
 pip install git+https://github.com/colcon/colcon-ros-cargo.git
 ```
 
-Lastly, use colcon to build everything.
+Lastly, run rosdep and use colcon to build everything.
 ```
+sudo rosdep init
+rosdep update
+rosdep install --from-paths src -y --ignore-src
 colcon build
 ```
+
+## Useage
+
