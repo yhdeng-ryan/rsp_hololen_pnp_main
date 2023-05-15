@@ -23,6 +23,21 @@ rosdep update
 rosdep install --from-paths src -y --ignore-src --skip-keys="Eigen3"
 colcon build
 ```
+## Structure
+
+├── include                                      
+│   ├── ros2_hololens2_communication        # Folder for all header files
+│   │   ├── robot_publisher.hpp             # Simple ROS2 publisher
+│   │   ├── robot_subscriber.hpp            # Simple ROS2 subscriber
+│   │   └── ros_tcp_connector.hpp           # TCP Server class
+├── launch
+│   └── ros2_hololens2_communication.xml    # ROS2 launch file for nodes
+├── src
+│   ├── robot_pubisher.cpp                  # Publisher functions
+│   ├── robot_subscriber.cpp                # Subscriber functions
+│   ├── ros_tcp_connector.cpp               # TCP Server and connection
+│   └── ...
+└── ...
 
 ## Usage
 
