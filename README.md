@@ -42,7 +42,7 @@ colcon build
 
 2. Turn on Hololens, choose all APP's and click `Holo Ros Comm`.
 
-3. Launch `main.launch.xml` and you will see Rviz open up with the UR5 and gripper models loaded. Another command window will show, this will be the control interface following steps. 
+3. Launch `main.launch.xml` and you will see Rviz open up with the UR5 and gripper models loaded. Another command window will show, this will be the control termianl for the following steps. 
 ```
 source install/setup.bash
 ros2 launch main main.launch.xml
@@ -56,7 +56,7 @@ Custom port: 50002
 
 5. In the contorl interface, it will ask "Perform registration? (y/n)", answer `y`. Hololens needs to be register with the robot's frame everytime you open the Hololens app. The registration positions are predefined in `src/main/json/reg_cfg.json`(required colcon build after edit) and `install/main/share/main/json/reg_cfg.json`.
 
-6. Follow the instructions in the control interface and let the gripper hold on to the marker. In Hololens, press `Connect` then press `send marker` 6 times when UR5 arrives it's registrion positions to send marker's positions to ROS to complete the data collection for registraion.
+6. Follow the instructions in the control termianl and let the gripper hold on to the marker. In Hololens, press `Connect` then press `send marker` 6 times when UR5 arrives it's registrion positions to send marker's positions to ROS to complete the data collection for registraion.
 
 7. In Hololen, press `Spawn pick` and use gestures to drag green cube to your desired pick position. Then press `Spawn place` and move the red cube to your desired place position.
 
