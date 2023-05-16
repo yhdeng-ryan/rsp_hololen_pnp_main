@@ -21,6 +21,11 @@ If moveit is not visible in Rviz planners tab while execution try installing the
 ```
 sudo apt install ros-galactic-backward-ros
 ```
+The main launch file in this package uses xterm as a command window. If [xterm](https://zoomadmin.com/HowToInstall/UbuntuPackage/xterm) is not already installed, run
+
+```
+sudo apt-get install xterm
+```
 
 ## Required tools
 - git
