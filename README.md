@@ -25,18 +25,14 @@ colcon build
 ```
 ## Structure
 
-    ├── include                                      
-    │   ├── ros2_hololens2_communication        # Folder for all header files
-    │   │   ├── robot_publisher.hpp             # Simple ROS2 publisher
-    │   │   ├── robot_subscriber.hpp            # Simple ROS2 subscriber
-    │   │   └── ros_tcp_connector.hpp           # TCP Server class
-    ├── launch
-    │   └── ros2_hololens2_communication.xml    # ROS2 launch file for nodes
     ├── src
-    │   ├── robot_pubisher.cpp                  # Publisher functions
-    │   ├── robot_subscriber.cpp                # Subscriber functions
-    │   ├── ros_tcp_connector.cpp               # TCP Server and connection
-    │   └── ...
+    │   ├── Universal_Robots_ROS2_Driver                  # Publisher functions
+    │   ├── hololens2-ur5-pick-and-place                # Subscriber functions
+    │   ├── ROS2_pick_and_place_UR5               # TCP Server and connection
+    │   ├── ros2_fiducial_registration_server      # TCP Server and connection
+    │   ├── ros2-hololens2-communication               # TCP Server and connection
+    │   ├── robotiq_2f               # TCP Server and connection
+    │   └── main
     └── ...
 
 ## Usage
