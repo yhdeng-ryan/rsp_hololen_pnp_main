@@ -1,5 +1,26 @@
 # Robot System Programming Project
 
+## Dependencies
+
+This project was built for ROS2 Galactic and a ROS2 environment with Ubuntu 20.04 is necessary for execution. 
+
+Some packages in this project use the Eigen3 math library. Please ensure that Eigen3 is installed
+
+```
+sudo apt install libeigen3-dev
+```
+Moveit is used to control the UR5. Please ensure that moveit is installed
+
+```
+sudo apt-get install ros-galactic-moveit
+```
+
+If moveit is not visible in Rviz planners tab while execution try installing the following package to fix the problem
+
+```
+sudo apt-get install ros-galactic-backward-ros
+```
+
 ## Required tools
 - git
 - vcs
