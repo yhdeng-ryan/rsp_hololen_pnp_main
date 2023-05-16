@@ -36,7 +36,7 @@ ros2-fiducial_registration_server
 
 ROS2_pick_and_place_UR5
 ---------------------------------
-
+yes
 
 
 
