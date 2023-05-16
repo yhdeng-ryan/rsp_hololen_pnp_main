@@ -12,13 +12,14 @@ sudo apt install libeigen3-dev
 Moveit is used to control the UR5. Please ensure that moveit is installed
 
 ```
-sudo apt-get install ros-galactic-moveit
+sudo apt install ros-galactic-moveit
 ```
 
 If moveit is not visible in Rviz planners tab while execution try installing the following package to fix the problem
+(https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/issues/438)
 
 ```
-sudo apt-get install ros-galactic-backward-ros
+sudo apt install ros-galactic-backward-ros
 ```
 
 ## Required tools
