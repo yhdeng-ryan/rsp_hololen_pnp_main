@@ -1,9 +1,9 @@
 # Robot System Programming Project
 
-## Tools
-git
-vcs
-colcon
+## Required tools
+- git
+- vcs
+- colcon
 
 
 ## Installation
