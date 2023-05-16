@@ -20,7 +20,7 @@ pip install git+https://github.com/colcon/colcon-ros-cargo.git
 Lastly, run rosdep and use colcon to build everything.
 ```
 sudo rosdep init
-rosdep update
+rosdep update --include-eol-distros
 rosdep install --from-paths src -y --ignore-src --skip-keys="Eigen3"
 colcon build
 ```
