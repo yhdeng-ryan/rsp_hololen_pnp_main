@@ -4,6 +4,7 @@
 - git
 - vcs
 - colcon
+- rosdep
 
 
 ## Installation
