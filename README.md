@@ -54,7 +54,7 @@ Host IP: 192.168.1.101
 Custom port: 50002
 ```
 
-5. In the contorl interface, it will ask "Perform registration? (y/n)", answer `y`. Hololens needs to be register with the robot's frame everytime you open the Hololens app. The registration positions are predefined in `src/main/json/reg_cfg.json`(required colcon build after edit) and `install/main/share/main/json/reg_cfg.json`.
+5. In the contorl termianl, it will ask "Perform registration? (y/n)", answer `y`. Hololens needs to be register with the robot's frame everytime you open the Hololens app. The registration positions are predefined in `src/main/json/reg_cfg.json`(required colcon build after edit) and `install/main/share/main/json/reg_cfg.json`.
 
 6. Follow the instructions in the control termianl and let the gripper hold on to the marker. In Hololens, press `Connect` then press `send marker` 6 times when UR5 arrives it's registrion positions to send marker's positions to ROS to complete the data collection for registraion.
 
