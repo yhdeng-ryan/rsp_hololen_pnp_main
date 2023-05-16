@@ -1,5 +1,11 @@
 # Robot System Programming Project
 
+## Tools
+git
+vcs
+colcon
+
+
 ## Installation
 Download all the packages for this project.
 ```
@@ -12,6 +18,9 @@ Here are all the commands:
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo apt install -y git libclang-dev python3-pip python3-vcstool
+```
+Open new terminal then,
+```
 cargo install cargo-ament-build
 pip install git+https://github.com/colcon/colcon-cargo.git
 pip install git+https://github.com/colcon/colcon-ros-cargo.git
