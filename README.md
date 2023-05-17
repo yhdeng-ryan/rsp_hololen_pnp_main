@@ -21,6 +21,11 @@ If moveit is not visible in Rviz planners tab while execution try installing the
 ```
 sudo apt install ros-galactic-backward-ros
 ```
+The main launch file in this package uses xterm as a command window. If [xterm](https://zoomadmin.com/HowToInstall/UbuntuPackage/xterm) is not already installed, run
+
+```
+sudo apt-get install xterm
+```
 
 ## Required tools
 - git
@@ -34,7 +39,7 @@ Download all the packages for this project.
 ```
 vcs import src < main.repos
 ```
-Since the `scaled_joint_trajectory_controller` does not work on ROS2 Galactic. You must change the default controller to `joint_trajectory_controller` in the `controllers.yaml` file. Please see [this](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/galactic#readme) for detail instructions.
+Since the `scaled_joint_trajectory_controller` does not work on ROS2 Galactic. You must change the default controller to `joint_trajectory_controller` in the `controllers.yaml` file. Please see [this](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/galactic#fake-hardware-on-ros2-galactic) for detail instructions.
 
 Install rust plugins for gripper driver. For detail instruction, please follow this [README](https://github.com/yhdeng-ryan/robotiq_2f/blob/master/README.md).
 Here are all the commands:
