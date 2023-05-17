@@ -1,0 +1,13 @@
+<launch>
+
+       <include file="$(find-pkg-share pnp_actionlib)/launch/ur5_pnp_actionlib_sim.launch" />
+
+       <node pkg="registration_service" exec="reg_svr" />
+
+       <node pkg="main" exec="main_node" launch-prefix="xterm -e" output="screen" />
+       
+       <node pkg="dummy_hololens" exec="dummy_reg_pub" launch-prefix="xterm -e" output="screen" />
+       <node pkg="dummy_hololens" exec="dummy_pick_pub" launch-prefix="xterm -e" output="screen" />
+       <node pkg="dummy_hololens" exec="dummy_place_pub" launch-prefix="xterm -e" output="screen" />
+
+</launch>
