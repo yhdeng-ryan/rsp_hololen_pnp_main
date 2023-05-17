@@ -26,13 +26,13 @@ The main launch file in this package uses xterm as a command window. If [xterm](
 ```
 sudo apt-get install xterm
 ```
-
-## Required tools
-- git
-- vcs
-- colcon
-- rosdep
-
+Some tools are required to install other dependencies and build the code, follow the commands to ensure all of them are installed.
+```
+sudo apt-get install git-all
+sudo apt install python3-vcstool
+sudo apt install python3-colcon-common-extensions
+sudo apt-get install python3-rosdep
+```
 
 ## Installation
 Download all the packages for this project.
