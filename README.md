@@ -85,12 +85,14 @@ colcon build
 source install/setup.bash
 ros2 launch main main.launch.xml
 ```
+IMPORTANT NOTE: Close the joint state publisher gui window after running the launch file. The robot will not move correctly if the gui is running while the robot tries to move.
 
 4. In the teach pendant, go to `Load Program`, `Installation`, `External Control`, put in
 ```
 Host IP: 192.168.1.101
 Custom port: 50002
 ```
+Ensure that the robot is not in a singular configuration by moving it with the teach pendant.
 
 5. In the contorl termianl, it will ask "Perform registration? (y/n)", answer `y`. Hololens needs to be register with the robot's frame everytime you open the Hololens app. The registration positions are predefined in `src/main/json/reg_cfg.json`(required colcon build after edit) and `install/main/share/main/json/reg_cfg.json`.
 
@@ -101,3 +103,28 @@ Custom port: 50002
 8. Press `Send pick` and `Send place` and the robot will start a pick and place routine.
 
 9. To repeat, simply click `Send pick` and `Send place` and it will start again.
+
+
+### Simulated robot
+1. Launch `main_sim.launch.xml` and you will see Rviz open up with the UR5 and gripper models loaded. Four other command windows will also open up. 
+```
+source install/setup.bash
+ros2 launch main main_sim.launch.xml
+```
+IMPORTANT NOTE: Close the joint state publisher gui window after running the launch file. The robot will not move correctly if the gui is running while the robot tries to move.
+
+2. In Rviz, ensure that a planning library is loaded in the context tab. Command the robot in rviz to a non singular pose by dragging the end effector of the robot and clicking the `Plan & Execute` button.
+
+3. In the main_node xterm window, enter `y` to begin the registration process. Press enter when promped to attach the marker since no physical marker is required for simulation. The robot will move to the various registration poses one by one.
+
+4. Each time the robot moves to a registration position, enter the coordinates of the end effector in the `dummy_reg_pub` xterm window one by one. These positions should be consistent with a transformed version of the registration positions. For simplicity, you can input the coordinates of the registration positions directly (implying a unity transform). The default coordinates are:
+```
+Position 1: 0.3, 0.5. 0.5
+Position 2: 0.3, 0.5. 0.6
+Position 3: 0.0, 0.7. 0.6
+Position 4: 0.0, 0.7. 0.5
+Position 5: -0.4, 0.5. 0.5
+Position 6: -0.4, 0.5. 0.6
+```
+
+5. Once the robot finishes moving to all the registration positions, press enter in the `main_node` xterm window to end the registration process. The robot is now ready for pick and place commands. Send one pick position through the `dummy_pick_pub` xterm window and one place position through the `dummy_place_pub` xterm window. The robot will now move to both positions and be ready to accept another command.
