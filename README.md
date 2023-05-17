@@ -39,7 +39,7 @@ Download all the packages for this project.
 ```
 vcs import src < main.repos
 ```
-Since the `scaled_joint_trajectory_controller` does not work on ROS2 Galactic. You must change the default controller to `joint_trajectory_controller` in the `controllers.yaml` file. Please see [this](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/galactic#fake-hardware-on-ros2-galactic) for detail instructions.
+Since the `scaled_joint_trajectory_controller` does not work on ROS2 Galactic. You must change the default controller to `joint_trajectory_controller` in the `ur_moveit_config/config/controllers.yaml` file. Please see [this](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/tree/galactic#fake-hardware-on-ros2-galactic) for detail instructions.
 
 Install rust plugins for gripper driver. For detail instruction, please follow this [README](https://github.com/yhdeng-ryan/robotiq_2f/blob/master/README.md).
 Here are all the commands:
