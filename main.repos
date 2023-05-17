@@ -10,7 +10,7 @@ repositories:
   robotiq_2f:
     type: git
     url: https://github.com/yhdeng-ryan/robotiq_2f.git
-    version: master
+    version: no_driver_ui
   ros2-hololens2-communication:
     type: git
     url: https://github.com/PrimoKu/ros2-hololens2-communication.git
