@@ -70,6 +70,7 @@ colcon build
     │   ├── ros2_fiducial_registration_server     # Fiducial registration service
     │   ├── ros2-hololens2-communication          # TCP Connection between Unity and ROS2
     │   ├── robotiq_2f                            # Robotiq gripper driver
+    │   ├── dummy_hololens                        # A dummy hololens message publisher for simulation and testing
     │   └── main                                  # Main function to start pick and place with Hololens
     └── ...
 
