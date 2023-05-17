@@ -4,7 +4,7 @@
 ### main_node 
 - Provides a main entry for executing the project.
 - State machine: 
-    1. VOID: Try to connect with Hololen. Go to REGISTRATION if success, ERROR if failed.
+    1. VOID: Determine if the user want to skip registration process.
     2. REGISTRATION: Launch a registration client to start registration process. Go to IDLE if success, ERROR if failed.
     3. IDLE: Wait for user to input the pick and place position markers. Go to PNP if both positions are sent.
     4. PNP: Launch a pnp client to start pick and place. Go to IDLE if success, ERROR if failed.
