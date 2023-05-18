@@ -128,3 +128,10 @@ Position 6: -0.4, 0.5. 0.6
 ```
 
 5. Once the robot finishes moving to all the registration positions, press enter in the `main_node` xterm window to end the registration process. The robot is now ready for pick and place commands. Send one pick position through the `dummy_pick_pub` xterm window and one place position through the `dummy_place_pub` xterm window. The robot will now move to both positions and be ready to accept another command.
+
+### Demo Video
+To watch the full demo video, please visit [HoloLens 2 Pick and Place with UR5](https://youtu.be/8-yKbps1ocE)
+<img src="/Demo/Registration.png" width="720">
+<img src="/Demo/Pick.png" width="720">
+<img src="/Demo/Place.png" width="720">
+<img src="/Demo/ShortPnP.gif" width="720">
